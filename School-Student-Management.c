@@ -29,6 +29,8 @@ typedef struct BinTreeNode *BinTreePointer;
 struct BinTreeNode{
     BinTreeElementType Data;
     BinTreePointer LChild, RChild;
+
+
 } ;
 
 typedef enum{
@@ -49,6 +51,8 @@ typedef struct{
 
 void CreateBST(BinTreePointer *Root);
 boolean BSTEmpty(BinTreePointer Root);
+
+
 void RecBSTInsert(BinTreePointer *Root, BinTreeElementType Item);
 void RecBSTSearch(BinTreePointer Root, BinTreeElementType KeyValue, boolean *Found, BinTreePointer *LocPtr);
 void RecBSTInorder(BinTreePointer Root);
